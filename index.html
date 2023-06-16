@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <title>Team Ledge-IT - Blockchain Based Decentralized Voting Application!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="static/css/chat.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <!--navbar start-->
+        <div id="thenavbar">
+            <nav id="hamnav">
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger"/>
+                <div id="hamitems">
+                    <a href="#navadmin">Admin Portal</a>
+                    <a href="#navcandidate">Candidate Portal</a>
+                    <a href="#navvoter">Voter Portal</a>
+                </div>
+            </nav>
+        </div>
+        <!--navbar end-->
+
+        <!--navbar class-->
+        <div class="nav-content">
+            <div class="navclass">
+                <div id="navadmin">
+                    <h1><i class="fa-solid
+                        fa-user"></i>Admin Portal</h1>
+                    <p>An admin portal in an online voting system is a secure web-based 
+                        interface that allows authorized personnel to manage and oversee the 
+                        election process. The portal is usually accessible only to designated administrators,
+                        who can perform various tasks such as start or stop vote, edit candidate and voter list,
+                        complete the registration process, display candidate and voter list along with 
+                        their hashcode and a lot more.</p>
+                        <a target="_blank" href="http:localhost/Final%20Voting/dapp/Admin/adminportal.php"><i class="fa-solid fa-angles-right"></i> Admin Portal</a>
+                </div>
+
+                <div id="navcandidate">
+                    <h1><i class="fa-sharp
+                        fa-solid fa-user-tie"></i>Candidate Portal</h1>
+                    <p>A candidate portal in an online voting system is a web-based interface that 
+                        allows candidates to manage their campaign, view election information, 
+                        and interact with voters. The portal is only for authorized candidates, 
+                        who can perform various tasks such as register themselves as candidates,
+                        view the candidate list, view result, and voting status, i.e., whether 
+                        its ongoing or over or has not started.</p>
+                        <a target="_blank" href="http://localhost/Final%20Voting/dapp/CANDIDATE/candidateportal.php"><i class="fa-solid fa-angles-right"></i> Candidate Portal</a>
+                </div>
+
+                <div id="navvoter">
+                    <h1><i class="fa-solid
+                        fa-users"></i>Voter Portal</h1>
+                    <p>The voter portal is a critical component of an online voting application, as 
+                        it provides a secure, accessible, and convenient platform for voters to 
+                        participate in the election process. It enables voters to access information, 
+                        resources, and support services to help them navigate the voting process, 
+                        and to ensure that their vote is counted and recorded correctly.</p>
+                        <a target="_blank" href="http://localhost:5000"><i class="fa-solid fa-angles-right"></i> Voter Portal</a>
+                </div>
+            </div>
+        </div>
+        <!--navbar class end-->
+        <div class="hero">
+            <div class="btn-box">
+                <button id="btn1" onclick="openAdmin()"><i class="fa-solid
+                        fa-user"></i>Admin</button>
+                <button id="btn2" onclick="openCandidate()"><i class="fa-sharp
+                        fa-solid fa-user-tie"></i>Candidate</button>
+                <button id="btn3" onclick="openVoter()"><i class="fa-solid
+                        fa-users"></i>Voter</button>
+            </div>
+
+            <!--admin portal-->
+            <div id="content1" class="content">
+                <div class="content-left">
+                    <h1>Admin Portal</h1>
+                    <p>An admin portal in an online voting system is a secure web-based 
+                        interface that allows authorized personnel to manage and oversee the 
+                        election process. The portal is usually accessible only to designated administrators,
+                        who can perform various tasks such as start or stop vote, edit candidate and voter list,
+                         complete the registration process, display candidate and voter list along with 
+                         their hashcode and a lot more.
+                    </p>
+                    <a target="_blank" href="http://localhost/Final%20Voting/dapp/ADMIN/adminportal.php">Admin Portal</a>
+
+                </div>
+                <div class="content-right">
+                    <img src="IMAGES/adminvector.jpg" alt="">
+                </div>
+            </div>
+
+            <!--candidate portal-->
+            <div id="content2" class="content">
+                <div class="content-left">
+                    <h1>Candidate Portal</h1>
+                    <p>A candidate portal in an online voting system is a web-based interface that 
+                        allows candidates to manage their campaign, view election information, 
+                        and interact with voters. The portal is only for authorized candidates, 
+                        who can perform various tasks such as register themselves as candidates,
+                         view the candidate list, view result, and voting status, i.e., whether 
+                         its ongoing or over or has not started.
+                    </p>
+                    <a target="_blank" href="http://localhost/Final%20Voting/dapp/CANDIDATE/candidateportal.php">Candidate Portal</a>
+                </div>
+                <div class="content-right">
+                    <img src="IMAGES/candidatevector.jpg" alt="">
+                </div>
+            </div>
+
+            <!--voter portal-->
+            <div id="content3" class="content">
+                <div class="content-left">
+                    <h1>Voter Portal</h1>
+                    <p>The voter portal is a critical component of an online voting application, as 
+                        it provides a secure, accessible, and convenient platform for voters to 
+                        participate in the election process. It enables voters to access information, 
+                        resources, and support services to help them navigate the voting process, 
+                        and to ensure that their vote is counted and recorded correctly.
+                    </p>
+                    <a target="_blank" href="http://localhost:5000/">Voter Portal</a>
+                </div>
+                <div class="content-right">
+                    <img src="IMAGES/votervector.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--chatbot-->
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Have a
+                Query? Ask here!
+                <i id="chat-icon" class="fa-solid fa-comments"></i>
+            </button>
+
+            <div class="content-chat">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                                <p id="botStarterMessage2" class="botText"><span>Loading...</span></p>
+                                <p id="botStarterMessage3" class="botText"><span>Loading...</span></p>
+                            </div>
+
+                            <!-- User input box -->
+                            <form action="chatbotform.php" method="post">
+                                <input id="uname" type="text" placeholder="Name" name="name" required>
+                                <input id="email" type="email" placeholder="Email" name="email" required>
+                                <input id="phone" type="number" placeholder="Phone" name="phone" required>
+                                <input id="description" type="text" placeholder="Write about the problem" name="problem" required>
+                                <button id="sbmt" type="submit">Submit</button>
+                            </form>
+
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box"
+                                        type="text" name="msg"
+                                        placeholder="Type your message...">
+                                    <p></p>
+                                </div>
+
+                                <div class="chat-bar-icons" id="chat-icons">
+                                    <i id="chat-icon" style="color: #333;"
+                                    class="fa-solid fa-paper-plane"
+                                    onclick="sendButton()">
+                                    </i>                                    
+                                </div>
+                            </div>
+
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="static/scripts/responses.js"></script>
+        <script src="static/scripts/chat.js"></script>
+            <script>
+                var content1 = document.getElementById("content1");
+                var content2 = document.getElementById("content2");
+                var content3 = document.getElementById("content3");
+    
+                var btn1 = document.getElementById('btn1');
+                var btn2 = document.getElementById("btn2");
+                var btn3 = document.getElementById("btn3");
+    
+                function openAdmin() {
+                    content1.style.transform = "translateX(0)";
+                    content2.style.transform = "translateX(100%)";
+                    content3.style.transform = "translateX(100%)";
+                    btn1.style.color = "#8f26f1";
+                    btn2.style.color = "#000";
+                    btn3.style.color = "#000";
+                    content1.style.transitionDelay = "0.3s";
+                    content2.style.transitionDelay = "0s";
+                    content3.style.transitionDelay = "0s";
+                }
+    
+                function openCandidate() {
+                    content1.style.transform = "translateX(100%)";
+                    content2.style.transform = "translateX(0)";
+                    content3.style.transform = "translateX(100%)";
+                    btn2.style.color = "#8f26f1";
+                    btn1.style.color = "#000";
+                    btn3.style.color = "#000";
+                    content1.style.transitionDelay = "0s";
+                    content2.style.transitionDelay = "0.3s";
+                    content3.style.transitionDelay = "0s";
+                }
+    
+                function openVoter() {
+                    content1.style.transform = "translateX(100%)";
+                    content2.style.transform = "translateX(100%)";
+                    content3.style.transform = "translateX(0)";
+                    btn1.style.color = "#000";
+                    btn2.style.color = "#000";
+                    btn3.style.color = "#8f26f1";
+                    content1.style.transitionDelay = "0s";
+                    content2.style.transitionDelay = "0s";
+                    content3.style.transitionDelay = "0.3s";
+                }
+            </script>
+        </body>
+    </html>

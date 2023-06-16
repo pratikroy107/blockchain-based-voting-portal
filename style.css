@@ -1,0 +1,221 @@
+* {
+   padding: 0;
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+.hero {
+   width: 80%;
+   height: 400px;
+   position: relative;
+   margin: 100px auto;
+   overflow: hidden;
+}
+
+.btn-box {
+   display: flex;
+   border-bottom: 1px solid #ccc;
+}
+
+.btn-box button {
+   background: transparent;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 14px 16px;
+   margin-right: 50px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.btn-box .fa-solid {
+   margin-right: 20px;
+}
+
+.btn-box button:hover .fa-solid {
+   color: #4706d4;
+}
+
+.content-right img {
+   width: 350px;
+}
+
+.content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 5% auto;
+   position: absolute;
+   transform: translateX(100%);
+   transition: 0.4s;
+}
+
+.content-left {
+   flex-basis: 50%;
+}
+
+.content-left p {
+   font-size: 13px;
+   padding: 30px 0;
+}
+
+.content-left a {
+   width: 150px;
+   display: block;
+   padding: 8px 5px;
+   border-radius: 8px;
+   text-decoration: none;
+   background-color: #8f26f1;
+   color: #fff;
+   text-align: center;
+}
+
+.content-left a:hover {
+   background-color: #fff;
+   color: #40007d;
+   border: 1px solid #430081;
+   transition: 0.3s;
+}
+
+.content-right {
+   flex-basis: 50%;
+   text-align: center;
+}
+
+#content1 {
+   transform: translateX(0px);
+}
+
+#btn1 {
+   color: #6b2def;
+}
+
+/*navbar*/
+#hamnav {
+   width: 100%;
+   background: #8f26f1;
+
+}
+
+#hamitems {
+   display: flex;
+}
+
+#hamitems a {
+   flex-grow: 1;
+   flex-basis: 0;
+   padding: 10px;
+   color: white;
+   text-decoration: none;
+   text-align: center;
+}
+
+#hamitems a:hover {
+   background: #430081;
+}
+
+#hamnav label,
+#hamburger {
+   display: none;
+}
+
+#thenavbar {
+   display: none;
+}
+
+.navclass {
+   display: none;
+}
+
+@media only screen and (max-width: 800px) {
+   #thenavbar {
+      display: block;
+   }
+
+   .hero {
+      display: none;
+   }
+
+   .navclass {
+      display: block;
+   }
+
+   #hamnav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+   }
+
+   #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #e0e0e0;
+   }
+
+   #hamnav label {
+      display: inline-block;
+      color: white;
+      background: #8f26f1;
+      font-style: normal;
+      font-size: 1.5rem;
+      padding: 6px;
+   }
+
+   #hamitems {
+      display: none;
+   }
+
+   #hamnav input:checked~#hamitems {
+      display: block;
+      width: 90%;
+   }
+}
+
+.nav-content h1 {
+   font-size: 30px;
+   margin-left: 10px;
+   margin-top: 20px;
+   margin-bottom: 16px;
+}
+
+.fa-solid {
+   margin-right: 10px;
+}
+
+.nav-content p {
+   font-size: 16px;
+   padding: 10px;
+}
+
+.nav-content a {
+   width: 200px;
+   display: block;
+   padding: 10px 1px;
+   border-radius: 4px;
+   text-decoration: none;
+   background-color: #8f26f1;
+   color: #fff;
+   text-align: center;
+   margin-top: 6px;
+   margin-bottom: 70px;
+   margin-left: 10px;
+}
+
+.nav-content a:hover {
+   background-color: #fff;
+   color: #40007d;
+   border: 1px solid #430081;
+   transition: 0.2s;
+}
+
+#navadmin,
+#navcandidate,
+#navvoter {
+   margin: 20px;
+}

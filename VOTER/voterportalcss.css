@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+button #gVO
+{
+    color: red;
+    background-color: #08a131;
+    border: 2px solid black;
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    display: flex;
+    width: 55%;
+    margin:8px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 8px -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: inline;
+
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 16px;
+    text-align: center;
+    background-color: #dad3f8;
+    margin: 10px;
+    width: 100px;
+  }
+table {
+    font-size: large;
+    border: 1px solid black;
+}
+
+td {
+    background-color: #dad3f8;
+    border: 1px solid black;
+}
+
+th,
+td {
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    font-weight: lighter;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dad3f8;
+}
+
+::selection {
+    background: #6d50e2;
+    color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px 50px 40px 40px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .topic {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 50px;
+    position: relative;
+}
+
+.content .list label {
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    padding-left: 25px;
+    transition: all 0.5s ease;
+    color: #333;
+    z-index: 12;
+}
+
+#votregis:checked~.list label.votregis,
+#putvote:checked~.list label.putvote,
+#vstatus:checked~.list label.vstatus,
+#dcandid:checked~.list label.dcandid,
+#vresult:checked~.list label.vresult {
+    color: #fff;
+}
+
+.content .list label:hover {
+    color: #6d50e2;
+}
+
+.content .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    border-radius: 12px;
+    background: #6d50e2;
+    transition: all 0.4s ease;
+}
+
+#votregis:checked~.list .slider {
+    top: 0;
+}
+
+#putvote:checked~.list .slider {
+    top: 60px;
+}
+
+#vstatus:checked~.list .slider {
+    top: 120px;
+}
+
+#dcandid:checked~.list .slider {
+    top: 180px;
+}
+
+#vresult:checked~.list .slider {
+    top: 240px;
+}
+
+.content .text-content {
+    width: 80%;
+    height: 100%;
+}
+
+.content .text {
+    display: none;
+}
+
+.content .text .title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.content .text p {
+    text-align: justify;
+}
+
+.content .text-content .votregis {
+    display: block;
+}
+
+#votregis:checked~.text-content .votregis,
+#putvote:checked~.text-content .putvote,
+#vstatus:checked~.text-content .vstatus,
+#dcandid:checked~.text-content .dcandid,
+#vresult:checked~.text-content .vresult {
+    display: block;
+}
+
+#putvote:checked~.text-content .votregis,
+#vstatus:checked~.text-content .votregis,
+#dcandid:checked~.text-content .votregis,
+#vresult:checked~.text-content .votregis {
+    display: none;
+}
+
+#one
+{
+    background-color: red;
+}
+.content input {
+    display: none;
+}
+
+#winnernametext {
+    font-size: 30px;
+}
+
+#voterregname,
+#voterregvotern,
+#voterregadharn {
+    display: block;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 24px;
+    margin-bottom: 14px;
+    border: 2px solid black;
+    width: 70%;
+}
+
+#voterregsubmit {
+    background-color: #08a131;
+    border: 3px solid;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#voterregsubmit:hover {
+    border-color: #08a131;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+#vst1,#vst2
+{
+    display: block; 
+    margin: 7px;   
+    border-radius: 12px;
+    /* margin-top: 24px; */
+    /* margin-bottom: 14px; */
+    border: 2px solid black;
+    text-align: center;
+
+}
+#btn1,#btn2
+{
+    background-color: #27c150;
+    border: 3px solid;
+    color: white;
+    padding:7px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 14px;
+}
+#btn1:hover,#btn2:hover {
+    border-color: #08a131;
+    background-color: white;
+    color: black;
+    transition: 0.6s;
+}
+section#box2 {
+    display: flex;
+}
+.goog-te-gadget
+{
+    color:rgb(255 0 0 / 1%) !important;
+    position: absolute;
+    right: 20%;
+    top: 25%;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link, .VIpgJd-ZVi9od-l4eHX-hSRGPd:visited, .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover, .VIpgJd-ZVi9od-l4eHX-hSRGPd:active
+{
+    display: none;
+}
+.goog-te-gadget .goog-te-combo {
+    border-radius: 10px;
+    padding: 3px;
+}
+#gVo
+{
+    background-color:#7AAB9C;
+    border: 3px solid #7AAB9C;
+    color: white;
+    padding: 3px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#gVo:hover {
+    border-color: #7AAB9C;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}

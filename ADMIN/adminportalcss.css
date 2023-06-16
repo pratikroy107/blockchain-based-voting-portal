@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dad3f8;
+}
+
+::selection {
+    background: #6d50e2;
+    color: #fff;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 40px 50px 40px 40px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .topic {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 70px;
+    position: relative;
+}
+
+.content .list label {
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    padding-left: 25px;
+    transition: all 0.5s ease;
+    color: #333;
+    z-index: 12;
+}
+
+#svote:checked~.list label.svote,
+#vstatus:checked~.list label.vstatus,
+#dcandid:checked~.list label.dcandid,
+#dvoter:checked~.list label.dvoter,
+#vresult:checked~.list label.vresult,
+#editcandid:checked~.list label.editcandid,
+#editvoter:checked~.list label.editvoter,
+#cregister:checked~.list label.cregister,
+#demographic:checked~.list label.demographic,
+#sendtoken:checked~.list label.sendtoken {
+    color: #fff;
+}
+
+.content .list label:hover {
+    color: #6d50e2;
+}
+
+.content .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    border-radius: 12px;
+    background: #6d50e2;
+    transition: all 0.4s ease;
+}
+
+#svote:checked~.list .slider {
+    top: 0;
+}
+
+#vstatus:checked~.list .slider {
+    top: 60px;
+}
+
+#dcandid:checked~.list .slider {
+    top: 120px;
+}
+
+#dvoter:checked~.list .slider {
+    top: 180px;
+}
+
+#vresult:checked~.list .slider {
+    top: 240px;
+}
+
+#editcandid:checked~.list .slider {
+    top: 300px;
+}
+
+#editvoter:checked~.list .slider {
+    top: 360px;
+}
+
+#cregister:checked~.list .slider {
+    top: 420px;
+}
+
+#demographic:checked~.list .slider {
+    top: 480px;
+}
+
+#sendtoken:checked~.list .slider {
+    top: 540px;
+}
+
+.content .text-content {
+    width: 80%;
+    height: 100%;
+}
+
+.content .text {
+    display: none;
+}
+
+.content .text .title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.content .text p {
+    text-align: justify;
+}
+
+.content .text-content .svote {
+    display: block;
+}
+
+#svote:checked~.text-content .svote,
+#vstatus:checked~.text-content .vstatus,
+#dcandid:checked~.text-content .dcandid,
+#dvoter:checked~.text-content .dvoter,
+#vresult:checked~.text-content .vresult,
+#editcandid:checked~.text-content .editcandid,
+#editvoter:checked~.text-content .editvoter,
+#cregister:checked~.text-content .cregister,
+#demographic:checked~.text-content .demographic,
+#sendtoken:checked~.text-content .sendtoken {
+    display: block;
+}
+
+#vstatus:checked~.text-content .svote,
+#dcandid:checked~.text-content .svote,
+#dvoter:checked~.text-content .svote,
+#vresult:checked~.text-content .svote,
+#editcandid:checked~.text-content .svote,
+#editvoter:checked~.text-content .svote,
+#cregister:checked~.text-content .svote,
+#demographic:checked~.text-content .svote,
+#sendtoken:checked~.text-content .svote {
+    display: none;
+}
+
+.content input[type=radio] {
+    display: none;
+}
+
+/* right contents css */
+
+.startvotebutton {
+    background-color: #4CAF50;
+    border: 4px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 100px;
+}
+
+.startvotebutton:hover {
+    border-color: #4CAF50;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.stopvotebutton {
+    background-color: #eb1c1c;
+    border: 4px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.stopvotebutton:hover {
+    border-color: #eb1c1c;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+#winnernametext {
+    font-size: 30px;
+}
+
+.completereg {
+    background-color: #f18d00;
+    border: 4px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 100px;
+}
+
+.completereg:hover {
+    border-color: #f18d00;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+#candidatecode,
+#candidatebool,
+#votercode,
+#voterbool,
+#tokencode,
+#tokenbool {
+    display: block;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    width: 70%;
+}
+
+#editcandidatesubmit,
+#editvotersubmit,
+#tokensubmit {
+    background-color: #08a131;
+    border: 4px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#editcandidatesubmit:hover,
+#editvotersubmit:hover,
+#tokensubmit:hover {
+    border-color: #08a131;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.goog-te-gadget
+{
+    color:rgb(255 0 0 / 1%) !important;
+    position: absolute;
+    right: 20%;
+    top: 98px;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link, .VIpgJd-ZVi9od-l4eHX-hSRGPd:visited, .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover, .VIpgJd-ZVi9od-l4eHX-hSRGPd:active
+{
+    display: none;
+}
+
+.goog-te-gadget .goog-te-combo {
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#demogr {
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: green;
+    border: 4px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 100px;
+}
+
+#demogr:hover {
+    border-color: #4CAF50;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}

@@ -1,0 +1,54 @@
+ADMIN PORTAL :
+1. start/stop vote - id=svote (unique*)
+2. voting status - id=vstatus 
+3. display candidate list - id=dcandid
+4. display voter list - id=dvoter (*)
+5. voting result - id=vresult
+6. edit candidate list - id=editcandid (*)
+7. edit voter list - id=editvoter (*)
+8. complete registration - id=cregister (*)
+
+CANDIDATE PORTAL :
+1. register yourself - id=canregis (*)
+2. voting status - id=vstatus
+3. display candidate list - id=dcandid
+4. voting result - id=vresult
+
+VOTER PORTAL :
+1. register yourself - id=votregis (*)
+2. put vote - id=putvote (*)
+3. voting status - id=vstatus
+4. display candiate list - id=dcandid
+5. voting result - id=vresult
+----------------------------------------------------
+
+ADMIN PORTAL :
+
+1. start vote button class = startvotebutton
+2. stop vote button class = stopvotebutton
+3. voting status span id = vstatuscontent
+4. voting result winner name span id = winnername
+5. stop registration button class = completereg
+6. edit candidate list hexcode input id = candidatecode
+7. edit candidate list true/false input id = candidatebool
+8. edit candidate list submit button id = editcandidatesubmit
+9. edit voter list hexcode input id = votercode
+10. edit voter list true/false input id = voterbool
+11. edit voter list submit button id = editvotersubmit
+
+
+CANDIDATE PORTAL :
+
+1. register - name input id = canregname
+2. register - party input id = canregparty
+3. register - submit button id = canregsubmit
+4. voting status - same as admin portal
+5. voting result winner - same as admin portal
+
+
+VOTER PORTAL :
+1. voting status - same as admin portal
+2. register - name input id = voterregname
+3. register - voter number id = voterregvotern
+4. register - adhar number id = voterregadharn
+5. register - submit button id = voterregsubmit

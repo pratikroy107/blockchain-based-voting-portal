@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="voterportalcss.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VOTER PORTAL</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+    </head>
+    <body>
+        <div class="container">
+        <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div class="topic">VOTER PORTAL</div>
+            <div class="content">
+                <input type="radio" name="slider" checked id="votregis">
+                <input type="radio" name="slider" id="putvote">
+                <input type="radio" name="slider" id="vstatus">
+                <input type="radio" name="slider" id="dcandid">
+                <input type="radio" name="slider" id="vresult">
+
+                <div class="list">
+                    <label for="votregis" class="votregis">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span class="title">Register Yourself</span>
+                    </label>
+
+                    <label for="putvote" class="putvote">
+                        <i class="fa-solid fa-hand-pointer"></i>
+                        <span class="title">Give Vote</span>
+                    </label>
+
+                    <label for="vstatus" class="vstatus">
+                        <span class="icon"><i class="fa-solid fa-wave-square"></i></span>
+                        <span class="title">Voting Status</span>
+                    </label>
+
+                    <label for="dcandid" class="dcandid">
+                        <span class="icon"><i class="fa-solid fa-people-group"></i></span>
+                        <span class="title">Display Candidate List</span>
+                    </label>
+
+                    <label for="vresult" class="vresult">
+                        <span class="icon"><i class="fa-solid fa-trophy"></i></span>
+                        <span class="title">Voting Result</span>
+                    </label>
+
+                    <div class="slider"></div>
+                </div>
+                <div class="text-content">
+                    <div class="votregis text">
+                        <div class="title">Register as a Voter</div>
+                        <form action="http://localhost/Final%20Voting/dapp/VOTER/process-form.php" method="post">
+
+                        <input type="text" id="voterregname"  name="name"
+                            placeholder="Enter your Name">
+                        <input type="text" id="voterregvotern" name="vn"
+                            placeholder="Enter your Voter Number">
+                        <input type="text" id="voterregadharn" name="an"
+                            placeholder="Enter your Adhar Number">
+                        <button id="voterregsubmit">SUBMIT</button>
+                        </form>
+                        <br>
+                    </div>
+                    
+                    <div class="putvote text">
+                        <div class="title">Give Your Vote</div>
+                        <section id="timer"></section>
+                     <div id="card1" class="column">
+                    
+					 <section id="box2">
+	
+	</section>
+                                                </div>
+                  
+                            </div>
+                    <div class="vstatus text">
+                        <div class="title">VOTING STATUS: <span
+                                id="vstatuscontent"></span></div>
+                        <br>
+                        <p>Voting status refers to the current state of an
+                            election, whether it is ongoing, not started, or has
+                            ended. It is important to have clear and accurate
+                            information about the voting status. Voters need to
+                            know whether the voting process has started, is
+                            ongoing, or has ended so that they can plan when and
+                            where to cast their vote. Clear and accurate
+                            information about the voting status ensures that
+                            voters are informed and can participate in the
+                            election. By knowing the voting status, election
+                            officials and political campaigns can encourage
+                            voter turnout. If the voting process has not yet
+                            started, they can encourage voters to register and
+                            prepare to vote.</p>
+                    </div>
+                    <div class="dcandid text">
+                        <div class="title">CANDIDATE'S LIST</div>
+                        <section id="box">
+	
+	</section>
+                                            </div>
+
+                    <div class="vresult text">
+                        <div class="title">VOTING RESULT</div>
+                        <p id="winnernametext">Winner Name : <span
+                                id="winnername"><b>ussssss</b></span>🎉</p>
+                        <br>
+						<section id="stat"></section>
+
+                        <p id="winningmsg"><b>Congratulations</b> on winning the election! It's
+                            a great
+                            accomplishment and a true testament to your hard
+                            work and dedication.<br>
+                            Your victory is not only a triumph for you, but for
+                            everyone who has supported you throughout the
+                            campaign. It's a moment to celebrate, to reflect on
+                            your journey, and to look forward to the future.
+                            <br>
+                            We wish you all the best as you begin this new
+                            chapter in your life. Congratulations once again,
+                            and we look forward to seeing all that you will
+                            accomplish in the years to come.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="
+            https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js
+            ">
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            crossorigin="anonymous">
+        </script>
+		<script type="text/javascript" src="./static/script2.js"></script>
+
+		 <script src="script.js"></script>
+
+
+        <!-- <script type="text/javascript">
+		
+        </script> -->
+    </body>
+</html>
