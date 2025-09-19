@@ -53,22 +53,19 @@ We propose a **Blockchain-Based Decentralized Online Voting System** that addres
 ## 🛠️ Tech Stack
 
 - **Frontend:** React / HTML / CSS / JavaScript  
-- **Backend:** Node.js / Express.js  
-- **Blockchain:** Ethereum / Smart Contracts (Solidity)  
-- **Database:** MongoDB  
+- **Backend:** Solidity / Node.js / Express.js  
+- **Blockchain:** Ganache  
+- **Database:** MySQL  
 - **Authentication:** Aadhaar API + OTP Verification  
-- **Other Tools:** MetaMask, Ganache, Truffle  
+- **Other Tools:** MetaMask
 
 ---
 
 ## 📷 Screenshots / Demo
+<img src="prototype%20voting.png" alt="Prototype Design (UI)" width="50%"/>
+<br>
+<img src="usecase%20voting.png" alt="Use Case & Functional Block Diagram" width="50%"/>
 
-(Add your screenshots here)
-
-![Login Page](path-to-image)  
-![Registration Page](path-to-image)  
-![Voting Dashboard](path-to-image)  
-![Blockchain Transaction](path-to-image)  
 
 ---
 ## 📌 Usage Workflow
